@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#2c2f33] text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YEPIE – Advanced Free Discord Bot</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet" />
+    <style>
+      body { font-family: 'Rubik', sans-serif; }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease-out forwards;
+      }
+
+      .delay-1 { animation-delay: 0.3s; }
+      .delay-2 { animation-delay: 0.6s; }
+      .delay-3 { animation-delay: 0.9s; }
+      .delay-4 { animation-delay: 1.2s; }
+      .delay-5 { animation-delay: 1.5s; }
+      .delay-6 { animation-delay: 1.8s; }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="bg-[#23272a] px-6 py-4 shadow-lg flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-[#0099ff] fade-in delay-1">YEPIE</h1>
+      <a href="https://discord.com/oauth2/authorize?client_id=1379441584575221902" target="_blank"
+         class="bg-[#0099ff] hover:bg-[#007acc] transition px-4 py-2 rounded-lg font-semibold text-white shadow fade-in delay-2">
+        Invite Bot
+      </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-20 px-4 bg-[#2c2f33]">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4 fade-in delay-1">Meet <span class="text-[#0099ff]">YEPIE</span></h2>
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-6 fade-in delay-2">
+        YEPIE is a powerful, free, and advanced multipurpose Discord bot offering moderation, logging, leveling, welcome messages, and more — just like MEE6, but free forever.
+      </p>
+      <div class="flex justify-center gap-4 flex-wrap mt-6 fade-in delay-3">
+        <a href="https://discord.com/oauth2/authorize?client_id=1379441584575221902" target="_blank"
+           class="bg-[#0099ff] hover:bg-[#007acc] px-6 py-3 rounded-lg font-semibold shadow text-white">
+          Invite YEPIE
+        </a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-[#23272a] py-16 px-4">
+      <div class="max-w-5xl mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-10 text-[#0099ff] fade-in delay-2">Features</h3>
+        <div class="grid md:grid-cols-3 gap-8 text-left text-gray-200">
+          <div class="bg-[#2c2f33] p-6 rounded-lg shadow hover:shadow-xl transition fade-in delay-1">
+            <h4 class="text-xl font-bold mb-2 text-white">⚙️ Moderation</h4>
+            <p>Ban, kick, mute, and manage users easily with powerful moderation tools.</p>
+          </div>
+          <div class="bg-[#2c2f33] p-6 rounded-lg shadow hover:shadow-xl transition fade-in delay-2">
+            <h4 class="text-xl font-bold mb-2 text-white">📊 Leveling System</h4>
+            <p>Rank up users with XP, levels, and custom level-up messages.</p>
+          </div>
+          <div class="bg-[#2c2f33] p-6 rounded-lg shadow hover:shadow-xl transition fade-in delay-3">
+            <h4 class="text-xl font-bold mb-2 text-white">📋 Logging</h4>
+            <p>Track bans, joins, deletes, edits, and more with flexible log settings.</p>
+          </div>
+          <div class="bg-[#2c2f33] p-6 rounded-lg shadow hover:shadow-xl transition fade-in delay-4">
+            <h4 class="text-xl font-bold mb-2 text-white">👋 Welcome System</h4>
+            <p>Send awesome welcome messages to new members automatically.</p>
+          </div>
+          <div class="bg-[#2c2f33] p-6 rounded-lg shadow hover:shadow-xl transition fade-in delay-5">
+            <h4 class="text-xl font-bold mb-2 text-white">🎮 Fun Commands</h4>
+            <p>Jokes, memes, 8ball, games, and much more to engage your community.</p>
+          </div>
+          <div class="bg-[#2c2f33] p-6 rounded-lg shadow hover:shadow-xl transition fade-in delay-6">
+            <h4 class="text-xl font-bold mb-2 text-white">💡 Easy to Use</h4>
+            <p>Just invite and run `?help`. No setup required, but tons of customizations!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section class="bg-[#2c2f33] py-20 px-6" id="commands">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-[#0099ff] mb-12">📘 Commands</h2>
+
+        <!-- MODERATION -->
+        <div class="mb-10">
+          <h3 class="text-2xl font-semibold text-white mb-4">🛠️ Moderation</h3>
+          <div class="space-y-2 text-gray-300">
+            <p>• <strong>ban</strong> — <code>?ban [user] [reason]</code></p>
+            <p>• <strong>unban</strong> — <code>?unban [user] [case]</code></p>
+            <p>• <strong>kick</strong> — <code>?kick [user] [reason]</code></p>
+            <p>• <strong>mute</strong> — <code>?mute [user] [reason]</code></p>
+            <p>• <strong>unmute</strong> — <code>?unmute [user] [case]</code></p>
+            <p>• <strong>warn</strong> — <code>?warn [user] [reason]</code></p>
+            <p>• <strong>unwarn</strong> — <code>?unwarn [user] [case]</code></p>
+          </div>
+        </div>
+
+        <!-- LEVELING -->
+        <div class="mb-10">
+          <h3 class="text-2xl font-semibold text-white mb-4">📈 Leveling</h3>
+          <div class="space-y-2 text-gray-300">
+            <p>• <strong>leveling setup</strong> — <code>?leveling setup</code></p>
+            <p>• <strong>leveling channel</strong> — <code>?leveling channel [channel]</code></p>
+            <p>• <strong>leveling message</strong> — <code>?leveling message [message]</code></p>
+          </div>
+        </div>
+
+        <!-- LOGS -->
+        <div class="mb-10">
+          <h3 class="text-2xl font-semibold text-white mb-4">📋 Logs</h3>
+          <div class="space-y-2 text-gray-300">
+            <p>• <strong>logs setup</strong> — <code>?logs setup</code></p>
+            <p>• <strong>logs set</strong> — <code>?logs set [type] [channel]</code></p>
+            <p>• <strong>logs disable</strong> — <code>?logs disable</code></p>
+          </div>
+        </div>
+
+        <!-- WELCOME -->
+        <div class="mb-10">
+          <h3 class="text-2xl font-semibold text-white mb-4">👋 Welcome</h3>
+          <div class="space-y-2 text-gray-300">
+            <p>• <strong>welcome setup</strong> — <code>?welcome setup [channel]</code></p>
+            <p>• <strong>welcome disable</strong> — <code>?welcome disable</code></p>
+          </div>
+        </div>
+
+        <!-- GENERAL -->
+        <div class="mb-10">
+          <h3 class="text-2xl font-semibold text-white mb-4">📦 General</h3>
+          <div class="space-y-2 text-gray-300">
+            <p>• <strong>role info</strong> — <code>?role info [role]</code></p>
+            <p>• <strong>role add</strong> — <code>?role add [user] [role]</code></p>
+            <p>• <strong>role remove</strong> — <code>?role remove [user] [role]</code></p>
+            <p>• <strong>role list</strong> — <code>?role list</code></p>
+            <p>• <strong>help</strong> — <code>?help</code></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1e2124] text-gray-400 py-6 text-center text-sm">
+      <p>&copy; 2025 YEPIE Bot. Made with ❤️ for Discord communities.</p>
+    </footer>
+
+  </body>
+</html>
